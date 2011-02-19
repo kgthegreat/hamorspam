@@ -5,3 +5,6 @@ get '/' do
   erb :index
 end
 
+get '/facebook' do
+  erb :facebook
+end
