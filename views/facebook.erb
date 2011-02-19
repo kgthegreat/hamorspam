@@ -11,6 +11,12 @@
             status:true, xfbml:true
          });
       </script>
-      <fb:login-button>Login with Facebook</fb:login-button>
+      <fb:login-button perms="manage_pages">Login with Facebook</fb:login-button>
+
+<form id='logoutForm' name='logoutForm' method='POST' action='http://www.facebook.com/logout.php'>
+            <input type='hidden' name='confirm' value='1' />
+            <!--INPUT TYPE="image" SRC="images/submit.gif" HEIGHT="30" WIDTH="173" BORDER="0" ALT="Submit Form"-->
+            <input type="submit" name="Submit" value="Logout from FB" />
+</form>
     </body>
  </html>
