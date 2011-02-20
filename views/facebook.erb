@@ -1,3 +1,15 @@
+<%=
+require 'rubygems'
+require 'httparty'
+require 'pp'
+
+feed = pp HTTParty.get('https://graph.facebook.com/156333031089012/feed')
+
+%>
+
+
+
+
 <html>
     <head>
       <title>My Facebook Login Page</title>
