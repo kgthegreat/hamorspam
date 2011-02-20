@@ -8,3 +8,7 @@ end
 get '/facebook' do
   erb :facebook
 end
+
+get '/app' do
+  erb :app
+end
