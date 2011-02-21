@@ -12,7 +12,7 @@ end
 
 get '/facebook' do
   erb :facebook
-  @feed = pp HTTParty.get('https://graph.facebook.com/156333031089012/feed')
+  @feed = HTTParty.get('https://graph.facebook.com/156333031089012/feed')
 end
 
 get '/app' do
