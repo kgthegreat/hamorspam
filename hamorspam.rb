@@ -4,6 +4,7 @@ require 'httparty'
 require 'pp'
 
 
+set :feed , HTTParty.get('https://graph.facebook.com/156333031089012/feed')
 
 
 get '/' do
